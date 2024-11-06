@@ -52,13 +52,42 @@ section.main{
     border:0;
 }
 
-.mockup{display: block;width:100%;color:white;text-align:center;padding-top:100px;}
+div.mockup{
+    display: block;
+    width:100%;
+    color:white;
+    text-align:center;
+    padding-top:100px;
+    position: relative;
+}
 
 .mockup h1{
     font-size: 50px;
 }
 
-.mockup img{max-width: 100%;}
+div.mockup-photo{
+    width: 50vmax;
+    height: 30vmax;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url('./images/mackbook.png');
+    background-size: 120% 120%;
+    background-position: 40% 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
 
 section.marcas{
     padding:100px 0;
